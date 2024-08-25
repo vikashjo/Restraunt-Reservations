@@ -14,4 +14,14 @@
     <%= location.table_limit %>
   </p>
 
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Opening Time:</strong>
+    <%= location.opening_time.strftime("%l:%M%p") %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Closing Time:</strong>
+    <%= location.closing_time.strftime("%l:%M%p") %>
+  </p>
+
 </div>
