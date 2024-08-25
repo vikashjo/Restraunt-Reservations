@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   devise_for :owners
   devise_for :customers
   resource :booking, only: [:show], controller: :booking
+  resources :active_reservations, only: [:index]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
