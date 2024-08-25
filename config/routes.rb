@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :locations do
     scope module: :locations do
-      resource :reservations, only: [:new, :create]
+      resources :reservations, only: [:new, :create]
     end
   end
   devise_for :owners
